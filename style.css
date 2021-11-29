@@ -350,7 +350,7 @@ ul, li, a, button{
 }
 
 /* ALERTTT BOX */
-#confirm {
+#form_confirm {
     display: none;
     position: fixed;
     border-radius: 8px;
@@ -363,15 +363,15 @@ ul, li, a, button{
     top: 89%;
     left: 28%;
 }
-#confirm i{
+#form_confirm i{
     margin-left: 5px;
 }
 
-#confirm .message{
+#form_confirm .message{
     margin-right: 30px;
 }
 
-#confirm button {
+#form_confirm button {
     margin-top: 3px;
     background: #c3f3d7;
     color: #23ad5c;
@@ -472,7 +472,7 @@ ul, li, a, button{
         font-size: 0.8rem;
     }
 
-    #confirm {
+    #form_confirm {
         font-size: 12px;
         width: 450px;
         max-width: 85%;
@@ -480,15 +480,15 @@ ul, li, a, button{
         left: 8%;
         padding: 10.5px;
     }
-    #confirm i{
+    #form_confirm i{
         margin-left: 5px;
     }
     
-    #confirm .message{
+    #form_confirm .message{
         margin: 0 30px;
     }
     
-    #confirm button {
+    #form_confirm button {
         margin-top: 0;
     }
 }
