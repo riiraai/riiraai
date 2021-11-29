@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;900&display=swap');
+
+:root{
+    --fm: "Poppins",sans-serif;
+
+    --fw-black: 900;
+    --fw-medium: 500;
+    --fw-regular: 400;
+
+    --bg-color: rgb(255, 255, 255);
+    --bg-color-alt: rgb(248, 248, 248);
+
+    --btn-color: rgba(255, 201, 71, 1);
+    --btn-color-alt: rgb(233, 182, 63);
+
+    --fcolor-primary: rgb(17, 39, 46);
+    --fcolor-secondary: rgb(88, 112, 131);
+
+    --fcolor-primary-hover: rgba(255, 201, 71, 1);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--fm);
+    background-color: var(--bg-color);
+}
+
+ul, li, a, button{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+/* ::selection{
+} */
+
+/* ----------------- header ----------------- */
+
+.header{
+    font-family: var(--fm);
+    font-weight: var(--fw-medium);
+    padding: 20px 10%;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.bg-fixed{
+    background-color: var(--bg-color);
+}
+
+.logo{
+    font-size: 1.4rem;
+    font-weight: var(--fw-black);
+    color: var(--fcolor-primary);
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.logo span{
+    color: rgba(255, 201, 71, 1);
+}
+
+.nav__links{
+    list-style: none;
+}
+
+.nav__links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a{
+    color: var(--fcolor-secondary);
+    transition: all 0.25s ease 0s;
+}
+
+.nav__links li a:hover{
+    color: var(--fcolor-primary-hover);
+}
+
+.nav_btn{
+    background-color: var(--btn-color);
+    padding: 9px 25px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--fcolor-primary);
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.nav_btn:hover{
+    background-color: var(--btn-color-alt);
+}
+
+/* ----------------- MAIN ----------------- */
+.main{
+    color: var(--fcolor-primary);
+    margin: 13rem 10% 0;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/* -------------- main_home -------------- */
+
+.main_home{
+    scroll-margin-top: 13rem;
+    font-size: 2rem;
+}
+
+.main_home h1{
+    line-height: 5rem;
+    margin-bottom: 1rem;
+}
+
+.main_home h3{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.main_home img{
+    width: 25rem;
+    margin: -3rem 40rem;
+    max-width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.btn{
+    margin: 2.5rem 0;
+}
+
+.btn_bg{
+    background-color: var(--btn-color);
+    padding: 9px 25px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--fcolor-primary);
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.btn_bg:hover{
+    background-color: var(--btn-color-alt);
+}
+
+/* ------------------ COLUMN ROW ------------------ */
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 2rem 0;
+    padding-right: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+/* ------------------ COLUMN ROW ------------------ */
+
+/* -------------- main_about -------------- */
+
+.main_about{
+    color: var(--fcolor-primary);
+    scroll-margin-top: 5rem;
+    margin: 10rem 0 5rem 0;
+}
+
+/* Education */
+
+.title{
+    line-height: 3rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+.title_hobi{
+    line-height: 2.2rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+.almt{
+    font-size: 0.9rem;
+}
+
+.contact{
+    margin-top: 3rem;
+    width: 60%;
+}
+
+.contact i{
+    margin-bottom: 1.5rem;
+}
+
+.column li{
+    margin-left: 2rem;
+}
+
+.skills{
+    float: left;
+    padding-right: 3.52rem;
+}
+
+.skills li{
+    padding: 5px 0;
+}
+
+/* buat ganti ke line hilangin*/ 
+.edu li, .experie li{ 
+    padding-bottom: 2rem;
+}
+
+/* .line{
+    display: block;
+    margin-top: -6rem;
+    margin-left: 1rem;
+    height: 7rem;
+    width: 9rem;
+    border-left: 2px solid;
+} */
+/* -------------- END MAIN_ABOUT -------------- */
+
+/* -------------- MAIN_PORTFOLIO -------------- */
+.main_portfolio{
+    color: var(--fcolor-primary);
+    scroll-margin-top: 5rem;
+    margin: 5rem 0 5rem 0;
+}
+
+.portfo{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.image{
+    text-align: center;
+    margin: 3% auto;
+}
+
+.image img{
+    padding: 0.4rem;
+    filter: grayscale(100%);
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+
+.image img:hover{
+    filter: none;
+}
+/* -------------- END MAIN_PORTFOLIO -------------- */
+
+/* -------------- FOOTER -------------- */
+.footer{
+    background-color: var(--bg-color-alt);
+    width: 100%;
+    height: 28rem;
+    scroll-margin-top: 5rem;
+}
+
+.content{
+    color: var(--fcolor-primary);
+    margin: 1rem 10%;
+    padding: 2.5rem 0 0 0;
+}
+
+.footer img{
+    width: 25rem;
+    margin: 10rem 50rem;
+    max-width: 100%;
+    display: inline-block;
+    position: absolute;
+}
+
+.form{
+    margin: 15px 15px 40px;
+    text-align: center;
+}
+
+#nama,#email,#msg,.submit{
+    margin: 5px 0;
+    padding: 1rem 1.7rem;
+    width: 15rem;
+    border-radius: 1rem;
+    background-color: var(--btn-color);
+    border: 2px solid var(--title-color);
+    outline: none;
+    color: var(--fcolor-primary);
+}
+
+::placeholder{
+    color: var(--fcolor-secondary);
+}
+
+#msg{
+    max-width: 90%;
+    border-radius: 1rem;
+    height: 10rem;
+    width: 30rem;
+}
+
+.submit{
+    cursor: pointer;
+    width: 10rem;
+    padding: 0.6rem 2rem;
+    color: var(--fcolor-primary);
+    font-weight: var(--fw-black);
+}
+
+.copyright{
+    padding: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.copyright a{
+    color: var(--fcolor-primary);
+}
+
+/* ALERTTT BOX */
+#confirm {
+    display: none;
+    position: fixed;
+    border-radius: 8px;
+    border-left: 5px solid;
+    border-left-color: #2ECC71;
+    background: #c3f3d7;
+    padding: 10px;
+    color: #23ad5c;
+    width: 480px;
+    top: 89%;
+    left: 28%;
+}
+#confirm i{
+    margin-left: 5px;
+}
+
+#confirm .message{
+    margin-right: 30px;
+}
+
+#confirm button {
+    margin-top: 3px;
+    background: #c3f3d7;
+    color: #23ad5c;
+    border-color: #2ed573;
+    border: none;
+    float: right;
+    cursor: pointer;
+}
+
+/* -------------- END FOOTER -------------- */
+
+/* -------------- RESPONSIVE -------------- */
+@media screen and (max-width:768px){
+    .header{
+        padding: 10px 10%;
+    }
+
+    .logo{
+        margin-left: auto;
+    }
+    
+    .nav__links{
+        visibility: hidden;
+    }
+
+    .main{
+        color: var(--fcolor-primary);
+        margin: 10rem 10%;
+    }
+    
+    /* main_home */
+    
+    .main_home{
+        text-align: center;
+        align-content: center;
+    }
+    
+    .main_home h1{
+        font-size: 2.1rem;
+        line-height: 3.5rem;
+    }
+    
+    .main_home h3{
+        font-weight: 500;
+        font-size: 0.9rem;
+    }
+    
+    .main_home img{
+        width: 15rem;
+        margin: 0.5rem 0;
+        max-width: 100%;
+        position: relative;
+        z-index: -1;
+    }
+
+    .contact{
+        width: 80%;
+    }
+
+    .column{
+        padding: 1rem;
+    }
+
+    .skills h3{
+        padding: 1rem 0 0;
+    }
+
+    .footer{
+        background-color: var(--bg-color-alt);
+        width: 100%;
+        height: 33rem;
+        scroll-margin-top: 5rem;
+    }
+
+    #nama,#email,#msg,.submit{
+        width: 20rem;
+        max-width: 90%;
+    }
+
+    #msg{
+        border-radius: 1rem;
+        height: 10rem;
+    }
+
+    .submit{
+        cursor: pointer;
+        padding: 0.6rem 2rem;
+        color: var(--fcolor-primary);
+        font-weight: var(--fw-black);
+    }
+
+    .content{
+        padding-top: 2rem;
+    }
+
+    .copyright{
+        padding: 1rem;
+        font-size: 0.8rem;
+    }
+
+    #confirm {
+        font-size: 12px;
+        width: 450px;
+        max-width: 85%;
+        top: 90%;
+        left: 8%;
+        padding: 10.5px;
+    }
+    #confirm i{
+        margin-left: 5px;
+    }
+    
+    #confirm .message{
+        margin: 0 30px;
+    }
+    
+    #confirm button {
+        margin-top: 0;
+    }
+}
