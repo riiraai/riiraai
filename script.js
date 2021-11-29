@@ -13,7 +13,7 @@ form.addEventListener('submit', e => {
 })
 
 function functionAlert(msg, myYes) {
-    var confirmBox = $("#confirm");
+    var confirmBox = $("#form_confirm");
     confirmBox.find(".message").text(msg);
     confirmBox.find(".yes").unbind().click(function() {
        confirmBox.hide();
