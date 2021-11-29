@@ -363,11 +363,9 @@ ul, li, a, button{
     top: 89%;
     left: 28%;
 }
-#form_confirm i{
-    margin-left: 5px;
-}
 
 #form_confirm .message{
+    margin-left: 5px;
     margin-right: 30px;
 }
 
@@ -473,22 +471,18 @@ ul, li, a, button{
     }
 
     #form_confirm {
-        font-size: 12px;
-        width: 450px;
+        font-size: 10px;
+        height: 45px;
         max-width: 85%;
         top: 90%;
         left: 8%;
-        padding: 10.5px;
-    }
-    #form_confirm i{
-        margin-left: 5px;
     }
     
     #form_confirm .message{
-        margin: 0 30px;
+        margin: 5px 10px;
     }
     
-    #form_confirm button {
-        margin-top: 0;
+    #form_confirm button{
+        margin-top: -0.5px;
     }
 }
