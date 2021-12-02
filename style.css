@@ -258,18 +258,12 @@ ul, li, a, button{
     margin: 5rem 0 5rem 0;
 }
 
-.portfo{
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.image{
+.portfo_image{
     text-align: center;
     margin: 3% auto;
 }
 
-.image img{
+.portfo_image img{
     padding: 0.4rem;
     filter: grayscale(100%);
     -webkit-user-drag: none;
@@ -278,7 +272,7 @@ ul, li, a, button{
     -o-user-drag: none;
 }
 
-.image img:hover{
+.portfo_image img:hover{
     filter: none;
 }
 /* -------------- END MAIN_PORTFOLIO -------------- */
