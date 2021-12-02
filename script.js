@@ -7,7 +7,6 @@ form.addEventListener('submit', e => {
     .then(data=>{
         console.log(data);
         functionAlert();
-        // alert("Thanks For Submitted");
     })
     .catch(err=>console.error(err)); //promise based
 })
