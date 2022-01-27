@@ -136,8 +136,11 @@ ul, li, a, button{
 }
 
 .main_home img{
-    width: 25rem;
-    margin: -3rem 40rem;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    margin: -4rem 40rem;
     max-width: 100%;
     position: absolute;
     z-index: -1;
@@ -168,7 +171,7 @@ ul, li, a, button{
 .column {
     float: left;
     width: 50%;
-    padding: 2rem 0;
+    margin: 2rem 0;
     padding-right: 20px;
 }
 
@@ -210,16 +213,15 @@ ul, li, a, button{
     text-transform: uppercase;
 }
 
-.almt{
+.almt,.desc{
     font-size: 0.9rem;
 }
 
-.contact{
+.sosmed{
     margin-top: 3rem;
-    width: 70%;
 }
 
-.contact i{
+.sosmed i{
     margin-bottom: 1.5rem;
 }
 
@@ -229,7 +231,8 @@ ul, li, a, button{
 
 .skills{
     float: left;
-    padding-right: 3.52rem;
+    padding-right: 5rem;
+    max-width: 50%;
 }
 
 .skills li{
@@ -379,10 +382,6 @@ ul, li, a, button{
     .header{
         padding: 10px 10%;
     }
-
-    .logo{
-        margin-left: auto;
-    }
     
     .nav__links{
         visibility: hidden;
@@ -401,29 +400,34 @@ ul, li, a, button{
     }
     
     .main_home h1{
-        font-size: 2.1rem;
+        margin: 20px;
+        font-size: 2rem;
         line-height: 3.5rem;
     }
     
     .main_home h3{
         font-weight: 500;
         font-size: 0.9rem;
+        margin: -0.5rem 0;
     }
     
     .main_home img{
-        width: 15rem;
-        margin: 0.5rem 0;
-        max-width: 100%;
+        width: 250px;
+        height: 250px;
+        margin: -3rem 0 0;
         position: relative;
-        z-index: -1;
     }
 
-    .contact{
-        width: 80%;
+    .btn{
+        margin: 1rem;
     }
 
     .column{
         padding: 1rem;
+    }
+
+    .skills{
+        max-width: 100%;
     }
 
     .skills h3{
