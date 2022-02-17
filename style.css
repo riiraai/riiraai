@@ -380,7 +380,7 @@ ul, li, a, button{
 /* -------------- RESPONSIVE -------------- */
 @media screen and (max-width:768px){
     .header{
-        padding: 10px 4rem;
+        padding: 10px 9%;
     }
     
     .nav__links{
@@ -389,7 +389,7 @@ ul, li, a, button{
 
     .main{
         color: var(--fcolor-primary);
-        margin: 10rem 10%;
+        margin: 10rem 5%;
     }
     
     /* main_home */
@@ -414,7 +414,7 @@ ul, li, a, button{
     .main_home img{
         width: 250px;
         height: 250px;
-        margin: -3rem 0 0;
+        margin: -1.5rem 0 0;
         position: relative;
     }
 
