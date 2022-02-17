@@ -49,7 +49,7 @@ ul, li, a, button{
 .header{
     font-family: var(--fm);
     font-weight: var(--fw-medium);
-    padding: 20px 10%;
+    padding: 10px 10%;
     top: 0;
     width: 100%;
     position: fixed;
@@ -424,7 +424,7 @@ ul, li, a, button{
 /* -------------- RESPONSIVE -------------- */
 @media screen and (max-width:768px){
     .header{
-        padding: 7px 9%;
+        padding: 0 9%;
     }
     
     .nav__links{
