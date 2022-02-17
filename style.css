@@ -424,7 +424,7 @@ ul, li, a, button{
 /* -------------- RESPONSIVE -------------- */
 @media screen and (max-width:768px){
     .header{
-        padding: 0 9%;
+        padding: 5px 9%;
     }
     
     .nav__links{
